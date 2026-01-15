@@ -1,19 +1,135 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Datos Personales</title>
-    <link rel="stylesheet" href="estilos.css">
+    <meta charset="UTF-8">
+    <title>Seguridad Virtual - Bachillerato en Informática</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div class="card">
-    <div class="icono" id="icono"></div>
-    <p><b>Nombre:</b> <span id="nombre"></span></p>
-    <p><b>Tipo de sangre:</b> <span id="sangre"></span></p>
-    <p><b>Altura (cm):</b> <span id="altura"></span></p>
-    <p><b>Peso (lb):</b> <span id="peso"></span></p>
-    <p><b>Edad:</b> <span id="edad"></span> años</p>
-</div>
+<!-- ===== BANNER ===== -->
+<header class="banner">
+    <div class="banner-content">
+        <h1>Seguridad Virtual</h1>
+        <p>Protegiendo la información digital de los estudiantes de bachillerato en informática</p>
+    </div>
+</header>
+
+<!-- ===== NAVEGACIÓN ===== -->
+<nav class="menu">
+    <a href="#introduccion">Introducción</a>
+    <a href="#amenazas">Amenazas</a>
+    <a href="#prevencion">Prevención</a>
+    <a href="#video">Video</a>
+    <a href="#juego">Videojuego</a>
+</nav>
+
+<!-- ===== INTRODUCCIÓN ===== -->
+<section id="introduccion" class="section">
+    <h2>¿Qué es la seguridad virtual?</h2>
+    <p>
+        La seguridad virtual o seguridad informática es el conjunto de normas, técnicas y prácticas
+        destinadas a proteger los sistemas digitales, redes, programas y datos contra ataques,
+        accesos no autorizados, daños o robos de información.
+    </p>
+    <p>
+        En el bachillerato en informática, la seguridad virtual es fundamental porque los estudiantes
+        trabajan constantemente con computadoras, internet, plataformas educativas y datos personales.
+        Un mal uso de la tecnología puede provocar pérdidas de información, robo de identidad y daños
+        económicos o académicos.
+    </p>
+</section>
+
+<!-- ===== AMENAZAS ===== -->
+<section id="amenazas" class="section dark">
+    <h2>Principales amenazas digitales</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Malware</h3>
+            <p>
+                Software malicioso diseñado para dañar sistemas, robar información o espiar al usuario.
+                Incluye virus, gusanos y troyanos.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Phishing</h3>
+            <p>
+                Técnica de engaño donde el atacante se hace pasar por una entidad confiable
+                para robar contraseñas, correos o datos bancarios.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Ransomware</h3>
+            <p>
+                Tipo de malware que bloquea archivos y exige un pago para recuperarlos.
+                Es una de las amenazas más peligrosas actuales.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Robo de identidad</h3>
+            <p>
+                Uso ilegal de datos personales para cometer fraudes o suplantar a una persona
+                en redes sociales o plataformas.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ===== PREVENCIÓN ===== -->
+<section id="prevencion" class="section">
+    <h2>Medidas preventivas de seguridad virtual</h2>
+
+    <ul class="list">
+        <li><strong>Contraseñas seguras:</strong> Usar combinaciones largas con letras, números y símbolos.</li>
+        <li><strong>Actualización de software:</strong> Mantener el sistema operativo y aplicaciones al día.</li>
+        <li><strong>Navegación responsable:</strong> Evitar sitios sospechosos y enlaces desconocidos.</li>
+        <li><strong>Uso de antivirus:</strong> Instalar y actualizar antivirus confiables.</li>
+        <li><strong>Copias de seguridad:</strong> Realizar respaldos frecuentes de la información.</li>
+        <li><strong>Conciencia digital:</strong> Pensar antes de publicar información personal.</li>
+    </ul>
+</section>
+
+<!-- ===== VIDEO ===== -->
+<section id="video" class="section dark">
+    <h2>Video educativo sobre seguridad virtual</h2>
+    <p>
+        Mira este video con información útil y clara sobre cómo proteger tus datos 
+        y navegar seguro en internet:
+    </p>
+
+    <div class="video-container">
+        <iframe 
+            src="https://www.youtube.com/embed/cs5eY0vC_Ns"
+            title="Seguridad virtual para estudiantes"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </div>
+</section>
+
+
+<!-- ===== VIDEOJUEGO ===== -->
+<section id="juego" class="section">
+    <h2>Videojuego educativo: ¿Seguro o Peligroso?</h2>
+    <p>
+        Lee la situación y responde correctamente para aprender sobre seguridad virtual.
+    </p>
+
+    <div class="game-box">
+        <p id="pregunta">Un correo te pide tu contraseña para verificar tu cuenta. ¿Es seguro?</p>
+        <button onclick="respuesta(false)">Sí</button>
+        <button onclick="respuesta(true)">No</button>
+        <p id="resultado"></p>
+    </div>
+</section>
+
+<footer>
+    <p>Proyecto educativo - Seguridad Virtual | Bachillerato en Informática</p>
+</footer>
 
 <script src="script.js"></script>
 </body>
